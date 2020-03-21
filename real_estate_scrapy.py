@@ -22,7 +22,7 @@ def write_to_csv(propertyData):
 def get_infocasas_properties():
   hasMorePages = True
   page = 1
-  while hasMorePages == True:
+  while hasMorePages is True:
     # try:
       res = requests.get(f'https://www.infocasas.com.bo/venta/inmuebles/santa-cruz/pagina{page}?&ordenListado=3')
       res.raise_for_status()
